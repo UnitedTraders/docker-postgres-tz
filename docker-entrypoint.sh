@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e
 
-cp /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+cp /usr/share/zoneinfo/$TZ /etc/localtime 
+echo $TZ > /etc/timezone
 
 # usage: file_env VAR [DEFAULT]
 #    ie: file_env 'XYZ_DB_PASSWORD' 'example'
